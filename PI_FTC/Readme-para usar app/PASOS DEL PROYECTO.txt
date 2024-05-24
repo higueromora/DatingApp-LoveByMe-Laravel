@@ -1,0 +1,35 @@
+1-Instalar node
+2-Instalar xampp
+3-Crear base de datos llamada laravel_master
+4-importar sql de laravel_master
+5-guardar proyecto en hdocs xampp con el nombre de la carpeta tal cual esta
+6- Crear un virtual host
+la ruta del xampp es C:\xampp\apache\conf\extra y modificar el httpd-vhost
+   
+
+<VirtualHost *:80>   
+    DocumentRoot "C:/xampp/htdocs/PI_FTC/social-app/public"
+    ServerName social-app.com.devel
+    ServerAlias www.social-app.com.devel
+    <Directory "C:/xampp/htdocs/PI_FTC/social-app/public">
+        Options Indexes FollowSymLinks     
+        AllowOverride All
+        Order Deny,Allow
+        Allow from all     
+    </Directory> 
+</VirtualHost>
+
+--------------------------------------------------------------------------------------
+
+Y en hosts poner sin el # esto siguiendo los pasos a continuación descritos : 
+127.0.0.1     social-app.com.devel
+
+1- Abrir como ADMINISTRADOR el bloc de notas, y desde el mismo abrir el archivo del hosts (C:\Windows\System32\drivers\etc) para modificarlo.
+
+2-Desactivar y activar el Xampp.
+
+3-Después en el buscador, http://social-app.com.devel/ con el http:// para que te funcione.
+
+Para correr el el proyecto en terminal 
+Comando cd C:\xampp\htdocs\PI_FTC\social-app y después npm run dev en terminal buscando el archivo social app
+7- Configurar el .env con las apis de mailtrap para recuperar contraseña y de pusher para el envio de mensajes de chat. Crearse cuenta propia para obtener claves propias en https://mailtrap.io/es/ y en https://pusher.com/ para poder usar las 2 apis que utiliza laravel.

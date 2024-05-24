@@ -1,0 +1,1 @@
+Crear base de datos llama laravel_master e importar el sql

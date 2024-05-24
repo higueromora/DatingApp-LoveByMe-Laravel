@@ -1,0 +1,505 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+
+
+body {
+    font-size: 18px; /* Puedes ajustar el tamaño según tus preferencias */
+    font-family: "Poetsen One", sans-serif !important;
+}
+
+
+
+.list-group-item.active{
+    background-color: #0b4730;
+}
+
+main{
+    background: #F1F2B5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #135058, #F1F2B5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #135058, #F1F2B5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 76.9vh;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar-brand p {
+    margin-top: 0; /* Elimina el margen superior */
+}
+
+
+// estilos de botones
+.btn-acceder{
+    color: #ffffff;
+    background-color: #1e626b;
+    &:hover{
+        color: #ffffff ;
+        background-color: #135058 ;
+    }
+}
+
+
+.btn-recordar{
+    margin-left: 4px;
+    color: #ffffff;
+    background-color: #9fa9ad;
+    &:hover{
+        color: #ffffff ;
+        background-color: #455258 ;
+    }
+}
+
+.btn-editprofile{
+    color: #ffffff;
+    background-color: #9d70ad;
+    &:hover{
+        color: #ffffff ;
+        background-color: #823b9c ;
+    }
+}
+
+.btn-savedescription{
+    color: #ffffff;
+    background-color: #54ad42;
+    &:hover{
+        color: #ffffff ;
+        background-color: #1e9c05 ;
+    }
+}
+
+.btn-comments{
+    color: #080808 !important;
+    background-color: #b98ccc !important;
+    &:hover{
+        background-color: #ab6dc5 !important;
+    }
+}
+
+.btn-verperfil{
+    color: #f1efef !important;
+    background-color: #7a498a;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    &:hover{
+        background-color: #8733a5;
+    }
+}
+
+.btn-actualizarcomentario{
+    color: #f1efef !important;
+    background-color: #29212c;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    &:hover{
+        background-color: #4c3b52;
+    }
+}
+
+.btn-chatcon{
+    color: #f1efef !important;
+    background-color: #621183;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    &:hover{
+        background-color: #823b9c;
+    }
+}
+
+.btn-bloquearperfil{
+    
+    background-color: #c3929273;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    &:hover{
+        background-color: #d32811;
+    }
+}
+
+.btn-desbloquearperfil{
+    color: #f1efef !important;
+    background-color: #154913;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    &:hover{
+        background-color: #1f611d;
+    }
+}
+
+.btn-subirimagen{
+    margin-top: 10px;
+    color: #f1efef !important;
+    background-color: #143b47;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    &:hover{
+        background-color: #294d58;
+    }
+}
+
+.btn-guardarcambios{
+    margin-top: 10px;
+    color: #f1efef !important;
+    background-color: #677367;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    &:hover{
+        background-color: #2c582c;
+    }
+}
+
+.container-borrarperfil {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    margin-top: 10px;
+}
+
+.borrar-perfilpersonal {
+    width: 50%; /* Establece el ancho del formulario */
+    text-align: center; /* Centra el contenido del formulario */
+}
+
+
+.h2-descripcion {
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    word-break: break-all; 
+}
+
+
+
+.editar-perfil{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-likematch{
+    background-color: #9e308c;
+    border-radius: 5px;
+}
+
+
+
+.card-card2{
+    border: none !important;
+  border-radius: 2rem;
+  background-color: #79711c;
+  
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
+  rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+  rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+   rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+     rgba(0, 0, 0, 0.09) 0px 8px 4px,
+      rgba(0, 0, 0, 0.09) 0px 16px 8px,
+       rgba(0, 0, 0, 0.09) 0px 32px 16px;
+       overflow: hidden;
+       margin-bottom: 15px;
+}
+
+.card-card{
+    padding-top: 6px;
+    border: none !important;
+  border-radius: 2rem;
+  background-color: #877c0b;
+  
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
+  rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+  rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+   rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+     rgba(0, 0, 0, 0.09) 0px 8px 4px,
+      rgba(0, 0, 0, 0.09) 0px 16px 8px,
+       rgba(0, 0, 0, 0.09) 0px 32px 16px;
+       overflow: hidden;
+       margin-bottom: 15px;
+}
+
+.avatar{
+    max-width: 65px;
+    max-height: 65px;
+    width: 100%;
+    height: 100%;
+    border-radius: 900px;
+    overflow: hidden; 
+}
+
+// .avatar{
+//     width: 55px;
+//     margin-bottom: 15px;
+//     border-radius: 900px;
+//     overflow: hidden;
+// }
+
+.footer{
+    background-color: #bfddca;
+}
+.navbar{
+    background-color: #bfddca;
+}
+
+.nav-link{
+    color: #000;
+}
+
+.avatar-profile{
+    width: 150px;
+    margin-bottom: 15px;
+    border-radius: 900px;
+    overflow: hidden;
+}
+
+.container-image{
+    // width: 150px;
+    // height: 150px;
+    padding: 8px;
+    // overflow: hidden; 
+    .avatar-profile{
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8%;
+        // object-position: 80% 100%;
+    }
+}
+
+// .avatar-profile {
+//     width: 150px;
+//     height: 150px; /* Establece un alto igual al ancho para crear un contenedor circular */
+//     margin-bottom: 15px;
+//     border-radius: 50%; /* Define un radio de borde del 50% para hacer el contenedor circular */
+//     overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor */
+//     display: flex; /* Utiliza flexbox para centrar vertical y horizontalmente la imagen */
+//     justify-content: center; /* Centra horizontalmente la imagen */
+//     align-items: center; /* Centra verticalmente la imagen */
+//     border: 2px solid #fff; /* Agrega un borde blanco para mejorar el contraste */
+//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra para resaltar el contenedor */
+//     transform: scale(0.8); /* Escala el contenedor al 80% de su tamaño original, dando la impresión de estar más lejos */
+// }
+
+// .avatar-profile img {
+//     width: 100%; /* Ajusta la imagen al 100% del ancho del contenedor */
+//     height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción de la imagen */
+//     object-fit: cover; /* Ajusta la imagen para que cubra completamente el contenedor manteniendo su relación de aspecto */
+// }
+
+
+.form-description {
+    display: none;
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 10;
+}
+
+.dimmed {
+    opacity: 0.9; /* Reducción de la opacidad para el resto del contenido */
+    pointer-events: none; /* Deshabilita los eventos de puntero en los elementos afectados */
+}
+
+.no-dimmed {
+    opacity: 1; /* Restaura la opacidad completa para el elemento .profile-description */
+    pointer-events: auto; /* Restaura los eventos de puntero para el elemento .profile-description */
+}
+
+.texto-subirimagennueva{
+    color: white;
+}
+
+
+.nickname{
+    color: #ffc721;
+}
+
+@media screen and (max-width: 900px) {
+    
+}
+.chat-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card{
+    margin-bottom: 15px;
+}
+
+.card-body{
+    // padding: 0px;
+    .description{
+        padding: 20px;
+        padding-bottom: 0;
+    }
+}
+
+.container_image_under{
+    width: 100%;
+    // height: 400px;
+    // overflow: hidden;
+    // padding: 0px;
+    img{
+        width: 100%;
+    }
+}
+
+// .container_image_under{
+//     // width: 100%;
+//     // height: 400px;
+//     // overflow: hidden;
+//     // padding: 0px;
+//     img{
+//         width: 100%;
+//         max-height: 500px;
+//         object-fit: contain;
+//         background-position: center;
+//     }
+// }
+
+.comment{
+    padding: 15px;
+}
+
+.btn-comments{
+    margin: 20px;
+    margin-top: 0px;
+}
+
+.likes{
+    padding: 10px 20px 32px 20px;
+    img{
+        width: 30px;
+        cursor: pointer;
+    }
+}
+
+.data-user{
+    padding: 5px;
+}
+
+.data-user a{
+    color: #000;
+    list-style: none;
+    text-decoration: none;
+}
+
+.number_likes{
+    color: rgb(167, 158, 158);
+    font-size: 13px;
+}
+
+.container-main-profile{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    .container-main-profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#message-card {
+    max-height: 70vh; /* 70% del alto del viewport */
+    overflow-y: auto; /* Agregar scroll vertical si el contenido excede la altura máxima */
+    scroll-behavior: auto;
+}
+
+// Estilos chat
+
+.mensaje-chat{
+    border: 1px solid black; 
+    padding: 5px 10px; 
+    max-width: 60%; 
+    margin: auto; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+}
+
+// Estilo para tarjeta login
+.cardd {
+    position: relative;
+    width: 281px;
+    height: 421px;
+    background: linear-gradient(-45deg, yellow 0%, red 100% );
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0; /* Sin padding interno */
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden; /* Para asegurar que los bordes redondeados oculten el contenido */
+    z-index: 1; /* Asegura que el contenido de la tarjeta esté por encima de los pseudo-elementos */
+  }
+  
+  
+  
+  .pareja-feliz {
+    width: 100%;
+    height: auto; /* Ajusta la imagen al ancho de la tarjeta */
+    border-radius: 8px 8px 0 0; /* Bordes superiores redondeados */
+  }
+  
+  .headingg {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 12px; /* Añade margen para el texto */
+  }
+  
+  .cardd p:not(.headingg) {
+    font-size: 14px;
+    margin: 12px; /* Añade margen para el texto */
+  }
+  
+  .cardd p:last-child {
+    color: #000000;
+    font-weight: 600;
+    margin: 12px; /* Añade margen para el texto */
+  }
+  
+  
+  
+  .container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 45px;
+  }
+  
+  
+// Estilos login
+.container-botones-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones-login{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 250px;
+}

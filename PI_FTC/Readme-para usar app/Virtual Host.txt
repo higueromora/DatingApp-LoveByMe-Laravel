@@ -1,0 +1,28 @@
+la ruta del xampp es C:\xampp\apache\conf\extra y modificar el httpd-vhost
+   
+
+<VirtualHost *:80>   
+    DocumentRoot "C:/xampp/htdocs/PI_FTC/social-app/public"
+    ServerName social-app.com.devel
+    ServerAlias www.social-app.com.devel
+    <Directory "C:/xampp/htdocs/PI_FTC/social-app/public">
+        Options Indexes FollowSymLinks     
+        AllowOverride All
+        Order Deny,Allow
+        Allow from all     
+    </Directory> 
+</VirtualHost>
+
+--------------------------------------------------------------------------------------
+
+Y en hosts poner sin el # esto siguiendo los pasos a continuación descritos : 
+127.0.0.1     social-app.com.devel
+
+1- Abrir como administrador el bloc de notas, y desde el mismo abrir el archivo del hosts (C:\Windows\System32\drivers\etc) para modificarlo.
+
+2-Desactivar y activar el Xampp.
+
+3-Después en el buscador, http://social-app.com.devel/ con el http:// para que te funcione.
+
+Para correr el el proyecto npm run dev en terminal buscando el archivo social app
+Tener node instalado

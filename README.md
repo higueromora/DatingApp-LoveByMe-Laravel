@@ -1,4 +1,4 @@
-1-Install node
+1-Install node y composer
 2-Install xampp
 3-Create database called laravel_master
 4-import sql from laravel_master
